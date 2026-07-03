@@ -151,7 +151,7 @@ constitutes acceptance of the updated policy.
 
 ## Contact
 
-Questions, or data-deletion requests: **[add your contact email here]**
+Questions, or data-deletion requests: **[impressiveplayer2468@gmail.com]**
 
 _TapeRoll is an independent project and is not affiliated with or endorsed by
 Discord Inc._
