@@ -111,7 +111,7 @@ constitutes acceptance of the updated Terms.
 
 ## 11. Contact
 
-Questions about these Terms: **[add your contact email here]**
+Questions about these Terms: **[impressiveplayer2468@gmail.com]**
 
 _TapeRoll is an independent project and is not affiliated with or endorsed by
 Discord Inc._
