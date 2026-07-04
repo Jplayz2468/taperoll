@@ -23,7 +23,9 @@ agree to this policy.
   clips — they only ever appear on a clip they make themselves.
 - The only information stored long-term is **per-server settings** and each
   member's **consent choice** (a Discord user ID and whether they accepted or
-  declined). No message content, no profiles, no analytics, no ad tracking.
+  declined), plus a few **anonymous aggregate counters** (e.g. a running total
+  clip count). No message content, no profiles, no per-user tracking, and no
+  advertising or third-party analytics.
 - We **do not sell, rent, or share** your data with third parties, and the voice
   "clip that" trigger runs **fully offline** — no audio is sent to any external
   service.
@@ -77,8 +79,19 @@ hosts the bot. It contains:
   grant that user 12 hours of voter perks. It is not shared onward. Disabled by
   default (no `DBL_TOKEN` = nothing is fetched or stored).
 
+### 4. Anonymous aggregate counters (stored)
+For basic operational insight, TapeRoll keeps a small file (`analytics.json`)
+of **aggregate counters only** — for example a running total number of clips
+made, a per-trigger breakdown (voice vs. command), and total seconds of footage
+clipped. This file contains **no user IDs, no server IDs, no names, and no
+message content** — just running totals. Figures like which servers the bot is
+in or the opt-in rate are computed **live** from data already described above
+(the server list Discord provides and the consent map) and are **never written**
+to this file. These counts are visible **only to the bot operator**.
+
 TapeRoll does **not** store usernames, message content, email addresses, IP
-addresses, payment data, or any behavioral/advertising analytics.
+addresses, payment data, or any behavioral/advertising analytics or per-user
+usage profiles.
 
 ## How we use this data
 
@@ -111,7 +124,8 @@ channel.
   recognition). **No audio is transmitted to any third-party or cloud service**
   for this feature.
 - We do **not** use third-party analytics, advertising networks, or data
-  brokers, and we do **not** sell or rent any data.
+  brokers, and we do **not** sell or rent any data. The only usage figures kept
+  are the **anonymous aggregate counters** described above (no IDs, no content).
 
 ## Data retention
 
