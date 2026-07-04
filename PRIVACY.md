@@ -71,6 +71,11 @@ hosts the bot. It contains:
   answered).
 - IDs of bot-posted messages scheduled for auto-deletion (used only to delete
   them on time; contains no personal profile data).
+- **If the operator enables Discord Bot List voting:** the **Discord user ID**
+  and vote timestamp of anyone who upvotes TapeRoll on discordbotlist.com — read
+  from that site's public vote API and stored in `votes.json` — used only to
+  grant that user 12 hours of voter perks. It is not shared onward. Disabled by
+  default (no `DBL_TOKEN` = nothing is fetched or stored).
 
 TapeRoll does **not** store usernames, message content, email addresses, IP
 addresses, payment data, or any behavioral/advertising analytics.
@@ -151,7 +156,7 @@ constitutes acceptance of the updated policy.
 
 ## Contact
 
-Questions, or data-deletion requests: **[impressiveplayer2468@gmail.com]**
+Questions, or data-deletion requests: **impressiveplayer2468@gmail.com**
 
 _TapeRoll is an independent project and is not affiliated with or endorsed by
 Discord Inc._
